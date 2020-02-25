@@ -1,0 +1,166 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:Poppins, Sans-serif;
+}
+.overlay{
+  display:block;
+}
+.overlay-content{
+  display:none;
+}
+.desktop{
+  display:flex;
+  float:right;
+  margin-right:10px;
+  background:white;
+  border-radius:5px;
+  margin-top:40px;
+  padding-left:10px;
+  padding-right:10px;
+  z-index:2;
+
+}
+.desktop li{
+  margin:30px;
+  list-style:none;
+}
+.desktop a{
+  text-decoration:none;
+  color:black;
+  font-weight:bold;
+}
+.desktop li a:hover{
+  background:rgb(25, 238, 25);
+  padding:5px 5px 5px 5px;
+  transition: 0.5s;
+  border-radius:5px;
+  color:white;
+}
+.logo{
+  font-weight:bold;
+  padding-right:0;
+  color:green;
+  font-size:30px;
+  display:none;
+}
+.logo2{
+  font-weight:bold;
+  padding-right:0;
+  color:green;
+  font-size:30px;
+  padding-top:2.3%;
+  display:none;
+}
+.logo3{
+  font-weight:bold;
+  padding-right:0;
+  color:green;
+  font-size:30px;
+  padding-top:2.3%;
+}
+.closebtn{
+  text-decoration:none;
+  padding-top:22px;
+  font-size:30px;
+  color:green;
+  display:none;
+}
+.openbtn{
+  padding-top:28px;
+  color:green;
+  font-size:20px;
+  margin-right:12px;
+  display:none;
+}
+@media only screen and (max-width: 1024px){
+  *{
+    padding:0;
+    margin:0;
+  }
+  .desktop{
+    display:none;
+  }
+  ul{
+    position:fixed;
+    height:100%;
+    width:100%;
+
+  }
+  nav ul{
+    display:block;
+    background: rgba(255, 255, 255, 0);
+    text-align:center;
+    padding-top:19px;
+  }
+  .logo{
+    background:white;
+    border-radius:5px;
+    position:relative;
+    margin-left:-15px;
+    margin-right:-15px;
+    padding-left:13%;
+    padding-right:7%;
+    display:block;
+    color:green;
+  }
+
+  nav ul li a:hover{
+    color:black;
+  }
+  .openbtn{
+    display:block;
+    float:right;
+    margin-right:5%;
+    font-size:20px;
+    padding-top:0;
+    cursor:pointer;
+  }
+  .closebtn{
+    display:block;
+    float:right;
+    color:black;
+    margin-right:2%;
+    color:white;
+  }
+  .overlay{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    background-color: rgba(20, 238, 20, 0.6);
+    overflow-x:hidden;
+    transition:0.5s;
+  }
+  .overlay-content{
+    position:relative;
+    top:25%;
+    width:100%;
+    text-align:center;
+    display:block;
+    margin-top:45px;
+    color:white;
+    list-style:none;
+  }
+  .overlay-content li{
+    margin:40px;
+  }
+  .overlay-content a{
+    color:white;
+    text-decoration:none;
+  }
+  .overlay-content a:hover{
+    background:rgba(19, 82, 19, 0.452);
+    padding:5px 5px 5px 5px;
+    transition:0.5s;
+    border-radius:5px;
+    color:white;
+  }
+  .logo2{
+    display:block;
+    color:white;
+  }
+
+}
